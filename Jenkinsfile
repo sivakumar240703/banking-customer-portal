@@ -52,6 +52,8 @@ pipeline {
             steps {
                 echo "Building Docker image: ${IMAGE_NAME}"
 
+                bat 'docker --version'
+
                 bat "docker build -t ${IMAGE_NAME} ."
             }
         }
