@@ -10,7 +10,7 @@ pipeline {
         APP_NAME = "customer-portal"
         GIT_URL = "https://github.com/sivakumar240703/banking-customer-portal.git"
         GIT_BRANCH = "main"
-        GIT_CREDENTIALS = "banking-github-credentials"
+        GIT_CREDENTIALS = "Github"
         CONTAINER_NAME = "customer-portal-${BUILD_NUMBER}"
         IMAGE_NAME = "customer-portal:build-${BUILD_NUMBER}"
     }
