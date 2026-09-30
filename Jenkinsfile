@@ -68,7 +68,7 @@ pipeline {
 
                 bat "docker run -d --name ${CONTAINER_NAME} -p ${HOST_PORT}:3000 ${IMAGE_NAME}"
 
-                bat 'timeout /t 5 /nobreak'
+                bat 'ping 127.0.0.1 -n 6 > nul'
 
                 echo 'Checking application health endpoint...'
 
